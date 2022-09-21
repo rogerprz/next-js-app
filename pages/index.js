@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import Link from 'next/link'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -22,15 +22,19 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
+        <Link href="/learn/next">
+          <a className={styles.card}>
+          <h2>Learn NextJs</h2>
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
+        </Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
+          <Link href="/learn/next">
+            <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+           </a>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
@@ -41,7 +45,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=defau`lt-template&utm_campaign=create-next-app"
             className={styles.card}
           >
             <h2>Deploy &rarr;</h2>
