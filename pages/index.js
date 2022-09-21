@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import Layout from '../components/Layout';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,42 +13,44 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to my eLearning</h1>
+      <Layout>
+        <main className={styles.main}>
+          <h1 className={styles.title}>Welcome to my eLearning</h1>
 
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.js</code>
-        </p>
+          <p className={styles.description}>
+            Get started by editing <code className={styles.code}>pages/index.js</code>
+          </p>
 
-        <div className={styles.grid}>
-          <Link href="/learn/next">
-            <a className={styles.card}>
-              <h2>Learn NextJs</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-          </Link>
+          <div className={styles.grid}>
+            <Link href="/learn/next">
+              <a className={styles.card}>
+                <h2>Learn NextJs</h2>
+                <p>Find in-depth information about Next.js features and API.</p>
+              </a>
+            </Link>
 
-          <Link href="/learn/react">
-            <a className={styles.card}>
-              <h2>Learn React</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-          </Link>
+            <Link href="/learn/react">
+              <a className={styles.card}>
+                <h2>Learn React</h2>
+                <p>Learn about Next.js in an interactive course with quizzes!</p>
+              </a>
+            </Link>
 
-          <Link href="/learn/vue">
-            <a className={styles.card}>
-              <h2>Learn Vue</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-          </Link>
-          <Link href="/learn/angular">
-            <a className={styles.card}>
-              <h2>Learn angular</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-          </Link>
-        </div>
-      </main>
+            <Link href="/learn/vue">
+              <a className={styles.card}>
+                <h2>Learn Vue</h2>
+                <p>Learn about Next.js in an interactive course with quizzes!</p>
+              </a>
+            </Link>
+            <Link href="/learn/angular">
+              <a className={styles.card}>
+                <h2>Learn angular</h2>
+                <p>Learn about Next.js in an interactive course with quizzes!</p>
+              </a>
+            </Link>
+          </div>
+        </main>
+      </Layout>
 
       <footer className={styles.footer}>
         <a
